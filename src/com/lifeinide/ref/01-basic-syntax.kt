@@ -116,7 +116,7 @@ fun main(args: Array<String>) {
     println("\nwhen expression = switch")
     run {
         fun describe(obj: Any): String =
-                when (obj) {
+                when (obj) { // when is an expression (as if) and the result is implicitly returned here
                     1          -> "One"
                     "Hello"    -> "Greeting"
                     is Long    -> "Long"
