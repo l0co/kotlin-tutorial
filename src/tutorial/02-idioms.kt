@@ -1,5 +1,8 @@
-package com.lifeinide.ref
+package tutorial
 
+/**
+ * @author Lukasz Frankowski
+ */
 @Suppress("ReplaceCallWithBinaryOperator")
 fun main(args: Array<String>) {
 

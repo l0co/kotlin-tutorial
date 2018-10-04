@@ -1,5 +1,8 @@
-package com.lifeinide.ref
+package tutorial
 
+/**
+ * @author Lukasz Frankowski
+ */
 @Suppress("JoinDeclarationAndAssignment", "ProtectedInFinal", "UNUSED_PARAMETER", "USELESS_IS_CHECK", "RedundantModalityModifier", "ConvertSecondaryConstructorToPrimary")
 fun main(args: Array<String>) {
 
@@ -18,7 +21,7 @@ fun main(args: Array<String>) {
         }
         println("Person name: ${Person("Tom").theFirstName}") // no "new" keyword for class instantiation
 
-        // default constrcutor with access modifiers
+        // default constructor with access modifiers
         class Person2 protected constructor(firstName: String) {
         }
         // Person2("Tom") // Error:(24, 9) Kotlin: Cannot access '<init>': it is protected in 'Person2'

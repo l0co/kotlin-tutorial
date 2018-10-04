@@ -1,5 +1,8 @@
-package com.lifeinide.ref
+package tutorial
 
+/**
+ * @author Lukasz Frankowski
+ */
 fun main(args: Array<String>) {
 
     println("break example")

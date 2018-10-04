@@ -1,5 +1,8 @@
-package com.lifeinide.ref
+package tutorial
 
+/**
+ * @author Lukasz Frankowski
+ */
 @Suppress("JoinDeclarationAndAssignment", "ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE", "ConstantConditionIf", "ConvertCallChainIntoSequence")
 fun main(args: Array<String>) {
 

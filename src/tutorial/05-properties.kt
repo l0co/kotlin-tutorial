@@ -1,7 +1,10 @@
-package com.lifeinide.ref
+package tutorial
 
 import java.time.LocalDate
 
+/**
+ * @author Lukasz Frankowski
+ */
 @Suppress("RedundantGetter", "RedundantSetter", "CanBePrimaryConstructorProperty", "unused", "UNUSED_VARIABLE", "ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE")
 fun main(args: Array<String>) {
 
