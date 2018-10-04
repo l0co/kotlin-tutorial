@@ -1,6 +1,8 @@
 package tutorial
 
 /**
+ * Idioms: https://kotlinlang.org/docs/reference/idioms.html
+ *
  * @author Lukasz Frankowski
  */
 @Suppress("ReplaceCallWithBinaryOperator")

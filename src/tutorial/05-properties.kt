@@ -3,12 +3,14 @@ package tutorial
 import java.time.LocalDate
 
 /**
+ * Properties and fields: https://kotlinlang.org/docs/reference/properties.html
+ *
  * @author Lukasz Frankowski
  */
 @Suppress("RedundantGetter", "RedundantSetter", "CanBePrimaryConstructorProperty", "unused", "UNUSED_VARIABLE", "ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE")
 fun main(args: Array<String>) {
 
-    println("Properties basics")
+    println("properties basics")
     run {
         class Person {
             val nonNullable: Int = 1
@@ -17,21 +19,21 @@ fun main(args: Array<String>) {
         val p = Person()
         // p.nonNullable = 2; // Error:(12, 9) Kotlin: Val cannot be reassigned
         p.nullable = 12; // accessing through setter
-        println("Person values: ${p.nonNullable}, ${p.nullable}") // 1, 12
+        println("person values: ${p.nonNullable}, ${p.nullable}") // 1, 12
     }
 
-    println("\nGetters, setters and initializers")
+    println("\ngetters, setters and initializers")
     run {
         class Person(yearOfBirth: Int) {
 
             // "field" variable is accessible in getter and setter
             var age: Int
                 get() {
-                    println("Calling getter with: $field")
+                    println("calling getter with: $field")
                     return field
                 }
                 set(value) {
-                    println("Calling setter with: $field => $value")
+                    println("calling setter with: $field => $value")
                     field = value
                 }
 
@@ -42,10 +44,10 @@ fun main(args: Array<String>) {
 
         }
         val p = Person(1979)
-        println("Person is: ${p.age} years old") // calling setter (from init block), calling getter, Person is ...
+        println("person is: ${p.age} years old") // calling setter (from init block), calling getter, Person is ...
     }
 
-    println("\nBacking fields")
+    println("\nbacking fields")
     run {
         class Person(yearOfBirth: Int) {
 
@@ -62,7 +64,7 @@ fun main(args: Array<String>) {
         p = null // stop with debugger here and see that "p" has only two physical fields (yearOfBirth and yearOfDeath)
     }
 
-    println("\nLate init")
+    println("\nlate init")
     run {
         class Person {
             lateinit var name: String // lateinit allows to skip property initialization here or in constructor
@@ -80,7 +82,7 @@ fun main(args: Array<String>) {
         val p = Person()
         // println("Person name: ${p.name}") // Exception in thread "main" kotlin.UninitializedPropertyAccessException: lateinit property name has not been initialized
         p.printName() // no effect
-        println("Person name: ${p.setup().name}") // Person name: Tom
+        println("person name: ${p.setup().name}") // Person name: Tom
     }
 
 

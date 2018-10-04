@@ -1,12 +1,14 @@
 package tutorial
 
 /**
+ * Classes and inheritance: https://kotlinlang.org/docs/reference/classes.html
+ *
  * @author Lukasz Frankowski
  */
 @Suppress("JoinDeclarationAndAssignment", "ProtectedInFinal", "UNUSED_PARAMETER", "USELESS_IS_CHECK", "RedundantModalityModifier", "ConvertSecondaryConstructorToPrimary")
 fun main(args: Array<String>) {
 
-    println("\nStandard class")
+    println("\nstandard class")
     run {
 
         // default constructor contains no name and no body
@@ -19,7 +21,7 @@ fun main(args: Array<String>) {
                 originalFirstName = "Originally: $firstName"; // you can use constructor arguments in property initializers
             }
         }
-        println("Person name: ${Person("Tom").theFirstName}") // no "new" keyword for class instantiation
+        println("person name: ${Person("Tom").theFirstName}") // no "new" keyword for class instantiation
 
         // default constructor with access modifiers
         class Person2 protected constructor(firstName: String) {
@@ -29,7 +31,7 @@ fun main(args: Array<String>) {
         // automatically created properties
         class Person3(val firstName: String, var lastName: String) { // val = final, var = variable
         }
-        println("Person name: ${Person3("Tom", "Smith").firstName}")
+        println("person name: ${Person3("Tom", "Smith").firstName}")
 
         // modifier in auto property
         class Person4(protected val firstName: String) {
@@ -43,20 +45,20 @@ fun main(args: Array<String>) {
             }
 
         }
-        println("Person name: ${Person5().firstName}")
+        println("person name: ${Person5().firstName}")
 
     }
 
-    println("\nIs (instanceof) and Any (Object)")
+    println("\nis (instanceof) and Any (Object)")
     run {
         class Person;
 
         // is = instanceof
         // Any = Object (root class)
-        println("Is Person Any? ${Person() is Any}")
+        println("is Person of Any type? ${Person() is Any}")
     }
 
-    println("\nInheritance")
+    println("\ninheritance")
     run {
         // classes are final by default, need "open" keyword to open them
         open class Person(x: Int)
@@ -92,7 +94,7 @@ fun main(args: Array<String>) {
 
     }
 
-    println("\nOverriding properties")
+    println("\noverriding properties")
     run {
         open class Person {
             val nonOverridable: Int get() { return 1; }
@@ -106,33 +108,33 @@ fun main(args: Array<String>) {
 
     }
 
-    println("\nInitialization order")
+    println("\ninitialization order")
     run {
         open class Person {
             constructor() {
-                println("PC: Person constructor")
+                println("pc: person constructor")
             }
 
             init {
-                println("PI: Person init")
+                println("pi: person init")
             }
         }
 
         class Customer: Person {
             constructor(): super() {
-                println("CC: Customer constructor")
+                println("cc: customer constructor")
             }
 
             init {
-                println("CI: Customer init")
+                println("ci: customer init")
             }
         }
 
-        Customer() // PI PC CI CC
+        Customer() // pi pc ci cc
 
     }
 
-    println("\nAbstract class")
+    println("\nabstract class")
     run {
         abstract class Person {
             abstract fun kill();
@@ -140,7 +142,7 @@ fun main(args: Array<String>) {
 
         class Customer: Person() {
             override fun kill() {
-                println("Killing customer")
+                println("killing customer")
             }
         }
     }

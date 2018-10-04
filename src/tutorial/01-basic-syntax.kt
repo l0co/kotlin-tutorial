@@ -1,6 +1,8 @@
 package tutorial
 
 /**
+ * Basic syntax: https://kotlinlang.org/docs/reference/basic-syntax.html
+ * 
  * @author Lukasz Frankowski
  */
 @Suppress("JoinDeclarationAndAssignment", "ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE", "ConstantConditionIf", "ConvertCallChainIntoSequence")
