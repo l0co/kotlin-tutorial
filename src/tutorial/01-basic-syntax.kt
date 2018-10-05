@@ -14,10 +14,10 @@ fun main(args: Array<String>) {
         fun sum(a: Int, b: Int): Int {
             return a + b
         }
-        println("1 + 2 = ${sum(1, 2)}")
+        println("1 + 2 = ${sum(1, 2)}") // this is a string template, widely used in this tutorial
 
         // expression body function can infer type
-        fun sum2(a: Int, b: Int) = a + b
+        fun sum2(a: Int, b: Int) = a + b // == fun sum2(a: Int, b: Int): Int
         println("1 + 2 = ${sum2(1, 2)}")
 
         // function with no returning value
