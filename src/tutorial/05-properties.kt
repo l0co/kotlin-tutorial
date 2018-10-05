@@ -82,7 +82,7 @@ fun main(args: Array<String>) {
         val p = Person()
         // println("Person name: ${p.name}") // Exception in thread "main" kotlin.UninitializedPropertyAccessException: lateinit property name has not been initialized
         p.printName() // no effect
-        println("person name: ${p.setup().name}") // Person name: Tom
+        println("person name: ${p.setup().name}") // person name: Tom
     }
 
 

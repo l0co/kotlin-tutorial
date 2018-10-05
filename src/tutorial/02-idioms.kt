@@ -26,10 +26,11 @@ fun main(args: Array<String>) {
 
     println("\ndefault values for functions")
     run {
-        fun runme(a: Int = 1) {
-            println(a)
+        fun runme(a: Int = 1, b: Int = 2) {
+            println("$a, $b")
         }
         runme()
+        runme(b = 3)
     }
 
     println("\nreadonly list & map")

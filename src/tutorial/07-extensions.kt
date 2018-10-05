@@ -130,7 +130,7 @@ fun main(args: Array<String>) {
                 return "~";
             }
 
-            // we can declare extension of on (Person) class in another (Greeting) and "open" it to be overridden
+            // we can declare extension of (Person) class in another (Greeting) class and "open" it to be overridden
             open fun Person.fancyName(): String {
                 return "${fancyString()} $name ${fancyString()}"; // this extension has access to Greeting class members (fancyString())
             }
