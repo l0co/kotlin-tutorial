@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
             println("hello, $name") // extension gets access to "this" (same as this.name)
         }
 
-        p.greeting()
+        p.greeting() // hello, Tom
     }
 
     println("\nextensions are resolved statically by class name")
@@ -63,8 +63,8 @@ fun main(args: Array<String>) {
             println("hello, $t")
         }
 
-        gp.sayAgain()
-        ga.sayAgain()
+        gp.sayAgain() // hello, tutorial._07_extensionsKt$main$3$Person@12f40c25
+        ga.sayAgain() // hello, tutorial._07_extensionsKt$main$3$Animal@3ada9e37
 
     }
 
@@ -88,7 +88,7 @@ fun main(args: Array<String>) {
         class Person(val name: String)
 
         fun Person?.greeting() { // ? allows to run extension on null object
-            println("hello, ${if (this==null) "nobody" else name}")
+            println("hello, ${this?.name ?: "nobody"}")
         }
 
         val p: Person? = null;

@@ -22,7 +22,7 @@ fun main(args: Array<String>) {
 
         }
         val oldThing = OldThing()
-        println("old thing age is ${oldThing.calculateAge()} and is appeared in ${oldThing.calculateYearOfAppearance()} year")
+        println("old thing age is ${oldThing.calculateAge()} and is appeared in ${oldThing.calculateYearOfAppearance()} year") // old thing age is 10 and is appeared in 2008 year
 
         // abstract classes don't have to implement interface methods, same as in java
         abstract class AbstractOldThing: Aged 

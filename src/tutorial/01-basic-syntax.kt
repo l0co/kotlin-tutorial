@@ -14,21 +14,21 @@ fun main(args: Array<String>) {
         fun sum(a: Int, b: Int): Int {
             return a + b
         }
-        println("1 + 2 = ${sum(1, 2)}") // this is a string template, widely used in this tutorial
+        println("1 + 2 = ${sum(1, 2)}") // 1 + 2 = 3: this is a string template, widely used in this tutorial
 
         // expression body function can infer type
         fun sum2(a: Int, b: Int) = a + b // == fun sum2(a: Int, b: Int): Int
-        println("1 + 2 = ${sum2(1, 2)}")
+        println("1 + 2 = ${sum2(1, 2)}") // 1 + 2 = 3
 
         // function with no returning value
         fun void(): Unit {
             println("void function")
         }
-        void()
+        void() // void function
         fun void2() { // Unit can be omitted
             println("void function")
         }
-        void2()
+        void2() // void function
     }
 
     println("\nval = final, var = mutuable")
@@ -50,21 +50,21 @@ fun main(args: Array<String>) {
             x += 1 // has access to scope
         }
 
-        println(x)
+        println(x) // 1
         incX()
-        println(x)
+        println(x) // 2
     }
 
-    println("\nif can be an expression")
+    println("\nif is an expression")
     run {
         val x = if (true) 1 else 2
-        println(x)
+        println(x) // 1
     }
 
     println("\nnull check")
     run {
         fun returnInt(): Int {
-            // return null // can't return null here
+            // return null // Error:(67, 20) Kotlin: Null can not be a value of a non-null type Int
             return 1
         }
 
@@ -72,21 +72,21 @@ fun main(args: Array<String>) {
             return null
         }
 
-        println(returnInt())
-        println(returnInt2())
+        println(returnInt()) // 1
+        println(returnInt2()) // null
     }
 
     println("\ninstanceof")
     run {
-        fun printStringLen(s: Any?) {
+        fun printStringLen(s: Any?) { // ? = optional argument
             if (s is String) // is = instanceof
                 println("string length: ${s.length}") // after "is" check "s" is automatically cast to string
             else
                 println("$s is not a string")
         }
-        printStringLen("abc")
-        printStringLen(1)
-        printStringLen(null)
+        printStringLen("abc") // string length: 3
+        printStringLen(1) // 1 is not a string
+        printStringLen(null) // null is not a string
 
         // not instanceof variation
         fun printStringLen2(s: Any?) {
@@ -100,7 +100,7 @@ fun main(args: Array<String>) {
     println("\nfor loop")
     run {
         val items = listOf("apple", "banana", "kiwifruit")
-        items.indices
+
         for (item in items) { // apple, banana, kiwifriut
             println(item)
         }
@@ -113,26 +113,26 @@ fun main(args: Array<String>) {
     run {
         val items = listOf("apple", "banana", "kiwifruit")
         var index = 0
-        while (index++ < items.size) {
+
+        while (index++ < items.size) // item at 0 is apple, item at 1 is banana ...
             println("item at ${index-1} is ${items[index-1]}")
-        }
     }
 
     println("\nwhen expression = switch")
     run {
         fun describe(obj: Any): String =
-                when (obj) { // when is an expression (as if) and the result is implicitly returned here
+                when (obj) { // "when" is an expression (as "if") and the result is implicitly returned here
                     1          -> "One"
                     "Hello"    -> "Greeting"
                     is Long    -> "Long"
                     !is String -> "Not a string"
                     else       -> "Unknown"
                 }
-        println(describe(1))
-        println(describe("Hello"))
-        println(describe(1L))
-        println(describe(Object()))
-        println(describe("Other string"))
+        println(describe(1)) // One
+        println(describe("Hello")) // Greeting
+        println(describe(1L)) // Long
+        println(describe(Object())) // Not a string
+        println(describe("Other string")) // Unknown
     }
 
     println("\nranges")
@@ -140,25 +140,23 @@ fun main(args: Array<String>) {
         // in range check
         val x = 10
         val y = 9
-        if (x in 1..y+1) {
-            println("fits in range")
-        }
-        if (x+1 !in 1..y+1) { // not in
-            println("doesn't fit in range")
-        }
+        if (x in 1..y+1)
+            println("fits in range") // executes ok
+        if (x+1 !in 1..y+1) // not in
+            println("doesn't fit in range") // executes ok
 
         // iterating
         for (z in 1..5)
-            println(z)
+            println(z) // 1 2 3 4 5
         for (z in 1..5 step 2) // with step
-            println(z)
+            println(z) // 1 3 5
     }
 
     println("\ncollections")
     run {
         val items = listOf("apple", "banana", "kiwifruit")
         for (i in items) // the same "in" works for iterables
-            println(i)
+            println(i) // apple, banana, kiwifriut
 
         // we can check any expression in when, even with "in"
         when {
@@ -171,7 +169,7 @@ fun main(args: Array<String>) {
             .filter { it.startsWith("a") } // this is lambda with one explicit "it" argument
             .sortedBy { it }
             .map { it.toUpperCase() }
-            .forEach { println(it) }
+            .forEach { println(it) } // APPLE
     }
 
 }

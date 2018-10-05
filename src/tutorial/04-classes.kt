@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
                 originalFirstName = "Originally: $firstName"; // you can use constructor arguments in property initializers
             }
         }
-        println("person name: ${Person("Tom").theFirstName}") // no "new" keyword for class instantiation
+        println(Person("Tom").theFirstName) // Tom: no "new" keyword for class instantiation
 
         // default constructor with access modifiers
         class Person2 protected constructor(firstName: String) {
@@ -31,7 +31,7 @@ fun main(args: Array<String>) {
         // automatically created properties
         class Person3(val firstName: String, var lastName: String) { // val = final, var = variable
         }
-        println("person name: ${Person3("Tom", "Smith").firstName}")
+        println(Person3("Tom", "Smith").firstName) // Tom
 
         // modifier in auto property
         class Person4(protected val firstName: String) {
@@ -45,17 +45,14 @@ fun main(args: Array<String>) {
             }
 
         }
-        println("person name: ${Person5().firstName}")
+        println(Person5().firstName) // Tom
 
     }
 
     println("\nis (instanceof) and Any (Object)")
     run {
         class Person;
-
-        // is = instanceof
-        // Any = Object (root class)
-        println("is Person of Any type? ${Person() is Any}")
+        println(Person() is Any) // true: is = instanceof, Any = Object (root class)
     }
 
     println("\ninheritance")
@@ -69,13 +66,15 @@ fun main(args: Array<String>) {
             constructor(x:Int) {}
             constructor(x:Int, y:Int): this(x) {} // calls other secondary constructor
         }
+
+        // calling super secondary constructor
         class Customer2: Person1 {
             constructor(x:Int): super(x) {} // calls super secondary constructor
             constructor(x:Int, y:Int): super(x, y) {}
         }
     }
 
-    println("\nOverriding methods")
+    println("\noverriding methods")
     run {
         open class Person {
             fun nonOverridable() {}
@@ -87,7 +86,7 @@ fun main(args: Array<String>) {
             override fun overridable() { super.overridable() } // this is still "open" for the next subclasses
         }
 
-        // disallowing overriding open method
+        // disallowing of further overriding open method
         class FatCustomer: Customer() {
             final override fun overridable() { super.overridable() } // using final
         }

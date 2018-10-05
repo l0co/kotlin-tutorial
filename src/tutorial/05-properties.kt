@@ -13,8 +13,8 @@ fun main(args: Array<String>) {
     println("properties basics")
     run {
         class Person {
-            val nonNullable: Int = 1
-            var nullable: Int? = null // nullable still needs initialization
+            val nonNullable: Int = 1 // val = readonly (has getter only)
+            var nullable: Int? = null // var = read-write, ? = nullable (still needs initialization)
         }
         val p = Person()
         // p.nonNullable = 2; // Error:(12, 9) Kotlin: Val cannot be reassigned
@@ -56,7 +56,7 @@ fun main(args: Array<String>) {
                 get() = field
 
             val yearOfBirthInTwoNumbers: Int // no backing field for this prop
-                get() = yearOfBirth % 100
+                get() = yearOfBirth % 100 // because default getter doesn't reference "field"
 
         }
 
@@ -82,7 +82,7 @@ fun main(args: Array<String>) {
         val p = Person()
         // println("Person name: ${p.name}") // Exception in thread "main" kotlin.UninitializedPropertyAccessException: lateinit property name has not been initialized
         p.printName() // no effect
-        println("person name: ${p.setup().name}") // person name: Tom
+        println(p.setup().name) // Tom
     }
 
 
