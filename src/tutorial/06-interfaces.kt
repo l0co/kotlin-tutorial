@@ -7,9 +7,36 @@ import java.time.LocalDate
  *
  * @author Lukasz Frankowski
  */
-fun main(args: Array<String>) {
 
-    // NOTE: interfaces cannot be declared on non-top level block, so all of them are declared below this function
+// NOTE: interfaces cannot be declared on non-top level block, so we put all of them here
+
+interface Aged {
+    fun calculateAge(): Int
+
+    fun calculateYearOfAppearance(): Int {
+        return LocalDate.now().year - calculateAge()
+    }
+}
+
+interface Named {
+    val name: String
+}
+
+interface Vehicle: Named {
+    fun stop()
+    fun start() {
+        println("starting $name vehicle")
+    }
+}
+
+interface Device: Named {
+    fun stop()
+    fun start() {
+        println("starting $name device")
+    }
+}
+
+fun main(args: Array<String>) {
 
     println("implementing interface")
     run {
@@ -66,28 +93,3 @@ fun main(args: Array<String>) {
 
 }
 
-interface Aged {
-    fun calculateAge(): Int
-
-    fun calculateYearOfAppearance(): Int {
-        return LocalDate.now().year - calculateAge()
-    }
-}
-
-interface Named {
-    val name: String
-}
-
-interface Vehicle: Named {
-    fun stop()
-    fun start() {
-        println("starting $name vehicle")
-    }
-}
-
-interface Device: Named {
-    fun stop()
-    fun start() {
-        println("starting $name device")
-    }
-}
