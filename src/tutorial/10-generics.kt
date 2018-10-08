@@ -1,24 +1,11 @@
 package tutorial
 
-@Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE")
+@Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE", "CanBeVal", "UNUSED_VARIABLE")
 /**
  * Generics: https://kotlinlang.org/docs/reference/generics.html
  *
  * @author Lukasz Frankowski
  */
-
-open class A {
-    fun hello() {
-        println("hello")
-    }
-}
-
-open class B: A()
-open class C: B()
-
-class Wrapper<T>(var value: T)
-
-@Suppress("CanBeVal", "ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE", "UNUSED_VARIABLE")
 fun main(args: Array<String>) {
 
     println("generic basics")
@@ -36,6 +23,18 @@ fun main(args: Array<String>) {
 
     println("\nvariance (producer and consumer)")
     run {
+        // declarations required for variance examples
+        open class A {
+            fun hello() {
+                println("hello")
+            }
+        }
+
+        open class B: A()
+        open class C: B()
+
+        class Wrapper<T>(var value: T)
+
         // first see how generic producer and consumer works in java in java/GenericsCheck.java file
         var wrapperA = Wrapper<A>(A())
         var wrapperB = Wrapper<B>(B())
