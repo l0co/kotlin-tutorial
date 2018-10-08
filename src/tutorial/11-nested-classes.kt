@@ -6,10 +6,6 @@ package tutorial
  * @author Lukasz Frankowski
  */
 
-interface Greetable {
-    fun hello()
-}
-
 class Outer {
 
     var greetingsCount: Int = 0;
