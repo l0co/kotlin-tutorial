@@ -1,14 +1,15 @@
 package tutorial
 
 import java.util.*
+import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
-@Suppress("ReplacePutWithAssignment", "UNUSED_VARIABLE", "UNUSED_VALUE")
-        /**
- * Collections: https://kotlinlang.org/docs/reference/collections.html
- *
- * @author Lukasz Frankowski
- */
+@Suppress("ReplacePutWithAssignment", "UNUSED_VARIABLE", "UNUSED_VALUE", "UNUSED_DESTRUCTURED_PARAMETER_ENTRY")
+    /**
+     * Collections: https://kotlinlang.org/docs/reference/collections.html
+     *
+     * @author Lukasz Frankowski
+     */
 fun main(args: Array<String>) {
 
     println("array")
@@ -18,7 +19,7 @@ fun main(args: Array<String>) {
         println(array.joinToString(", ")) // 4, 2, 3
 
         val intArray = intArrayOf(1, 2, 3) // there are specialized array types for primitives which are optimized with non-boxed items:
-                                           // IntArray, ByteArray, ShortArray, CharArray
+        // IntArray, ByteArray, ShortArray, CharArray
         println(intArray.joinToString(", ")) // 1, 2, 3
 
     }
@@ -46,5 +47,17 @@ fun main(args: Array<String>) {
         // readonlyMap.put("six", 6) // Error:(45, 21) Kotlin: Unresolved reference: put
 
         map = HashMap() // example creation of different kind of map
+    }
+
+    println("\nsequences")
+    run {
+        // sequences are equivalent of java streams
+
+        val map = mutableMapOf("one" to 1, "two" to 2, "three" to 3, "four" to 4, "five" to 5)
+        val list = map.asSequence()
+            .filter { (k, v) -> k.startsWith("t") || v > 4 }
+            .map { (k, v) -> k.toUpperCase() }
+            .toCollection(ArrayList())
+        println(list.joinToString(", ")) // TWO, THREE, FIVE
     }
 }
