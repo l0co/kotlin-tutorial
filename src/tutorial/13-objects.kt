@@ -7,14 +7,14 @@ package tutorial
  */
 
 // object expression can be used to create singleton objects
-object MySingleton {
+private object MySingleton {
     fun hello() {
         println("hello, singleton")
     }
 }
 
 // classes can have companion object which is the way to add static methods to the class
-class CompanionClass {
+private class CompanionClass {
 
     companion object {
         fun hello() {
@@ -24,7 +24,7 @@ class CompanionClass {
 }
 
 // default companion object is called Companion, but it also can have custom name
-class CompanionClass2 {
+private class CompanionClass2 {
 
     companion object Other {
         fun hello() {
@@ -33,7 +33,6 @@ class CompanionClass2 {
     }
     
 }
-
 
 fun main(args: Array<String>) {
 

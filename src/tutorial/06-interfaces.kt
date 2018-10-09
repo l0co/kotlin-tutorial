@@ -10,7 +10,7 @@ import java.time.LocalDate
 
 // NOTE: interfaces cannot be declared on non-top level block, so we put all of them here
 
-interface Aged {
+private interface Aged {
     fun calculateAge(): Int
 
     fun calculateYearOfAppearance(): Int {
@@ -18,18 +18,18 @@ interface Aged {
     }
 }
 
-interface Named {
+private interface Named {
     val name: String
 }
 
-interface Vehicle: Named {
+private interface Vehicle: Named {
     fun stop()
     fun start() {
         println("starting $name vehicle")
     }
 }
 
-interface Device: Named {
+private interface Device: Named {
     fun stop()
     fun start() {
         println("starting $name device")

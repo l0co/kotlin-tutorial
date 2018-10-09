@@ -106,6 +106,6 @@ fun main(args: Array<String>) {
 
 }
 
-object Singleton {
+private object Singleton {
     val name = "declared singleton"
 }

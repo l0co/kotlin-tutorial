@@ -9,7 +9,7 @@ package tutorial
 // enum classes are basically the same as in java
 
 // basic enum
-enum class Status {
+private enum class Status {
     OPENED,
     CLOSED
 }

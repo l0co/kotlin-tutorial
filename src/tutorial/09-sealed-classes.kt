@@ -8,7 +8,7 @@ package tutorial
 
 // NOTE: sealed class cannot be declared in {} block
 
-sealed class NamedThing constructor(val name: String) { // sealed class has default constructor private
+private sealed class NamedThing constructor(val name: String) { // sealed class has default constructor private
 
     // sealed class is abstract by default
     abstract fun sayHello();

@@ -6,7 +6,7 @@ package tutorial
  * @author Lukasz Frankowski
  */
 
-class Outer {
+private class Outer {
 
     var greetingsCount: Int = 0;
 

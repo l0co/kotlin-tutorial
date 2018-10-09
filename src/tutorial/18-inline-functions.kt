@@ -8,26 +8,26 @@ package tutorial
  * @author Lukasz Frankowski
  */
 
-fun doLoop(a: Array<String>, p: (String) -> Unit) {
+private fun doLoop(a: Array<String>, p: (String) -> Unit) {
     for (i in a)
         p(i)
 }
 
-inline fun inlineLoop(a: Array<String>, p: (String) -> Unit) {
+private inline fun inlineLoop(a: Array<String>, p: (String) -> Unit) {
     for (i in a)
         p(i)
 }
 
-inline fun inlineLoop2(a: Array<String>, noinline p: (String) -> Unit) {
+private inline fun inlineLoop2(a: Array<String>, noinline p: (String) -> Unit) {
     for (i in a)
         p(i)
 }
 
-fun <T> printClass(clazz: Class<T>) {
+private fun <T> printClass(clazz: Class<T>) {
     println(clazz.simpleName)
 }
 
-inline fun <reified T> reifiedPrintClass() {
+private inline fun <reified T> reifiedPrintClass() {
     println(T::class.simpleName)
 }
 
