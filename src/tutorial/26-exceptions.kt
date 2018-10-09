@@ -36,7 +36,7 @@ fun main(args: Array<String>) {
         } catch (e: Exception) {
         }
 
-        // after such scenario "x" is not of special Nothing type
+        // after such scenario "x" is now of special Nothing type
         // you can also use Nothing type to mark functions that never returns
 
         fun throwEx(): Nothing {
