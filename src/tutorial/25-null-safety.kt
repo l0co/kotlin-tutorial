@@ -32,6 +32,13 @@ fun main(args: Array<String>) {
         }
     }
 
+    println("\n?: operator")
+    run {
+        // ?: (elvis) operator is used as "else" for nullable references
+        val nullable: String? = null
+        println(nullable?.length ?: 0) // 0
+    }
+
     println("\n!! operator")
     run {
         // !! operator forces variable to be treated as not null
