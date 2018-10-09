@@ -44,7 +44,7 @@ fun main(args: Array<String>) {
     println("\ninfix notation")
     run {
         class Addable(val x: Int) {
-            infix fun add(a: Addable): Addable { // infix functions can be used as operator betweend two Addable objects
+            infix fun add(a: Addable): Addable { // infix functions can be used as operator between two Addable objects
                 return Addable(x + a.x)
             }
 

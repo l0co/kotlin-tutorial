@@ -2,7 +2,7 @@
 
 package tutorial
 
-/**                                                   -*
+/**                                                   
  * Inline Functions: https://kotlinlang.org/docs/reference/inline-functions.html
  *
  * @author Lukasz Frankowski
