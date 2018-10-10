@@ -1,7 +1,7 @@
 package tutorial
 
 /**
- * Classes and inheritance: https://kotlinlang.org/docs/reference/classes.html
+ * Classes and Inheritance: https://kotlinlang.org/docs/reference/classes.html
  *
  * @author Lukasz Frankowski
  */

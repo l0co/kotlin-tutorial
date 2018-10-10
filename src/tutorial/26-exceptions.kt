@@ -1,11 +1,11 @@
 package tutorial
 
-@Suppress("DIVISION_BY_ZERO", "UNUSED_VARIABLE", "ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE")
 /**
  * Exceptions: https://kotlinlang.org/docs/reference/exceptions.html
  *
  * @author Lukasz Frankowski
  */
+@Suppress("DIVISION_BY_ZERO", "UNUSED_VARIABLE", "ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE")
 fun main(args: Array<String>) {
 
     println("exception basics")

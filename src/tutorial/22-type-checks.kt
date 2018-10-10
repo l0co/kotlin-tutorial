@@ -1,11 +1,11 @@
 package tutorial
 
-@Suppress("UNUSED_VALUE")
-    /**
+/**
  * Type Checks and Casts: https://kotlinlang.org/docs/reference/typecasts.html
  *
  * @author Lukasz Frankowski
  */
+@Suppress("UNUSED_VALUE")
 fun main(args: Array<String>) {
 
     println("type check with \"is\"")

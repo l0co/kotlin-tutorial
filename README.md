@@ -1,4 +1,35 @@
 # Kotlin tutorial for Java Developers
 
 Essentially, this is a tutorial for Kotlin programming language from [here](https://kotlinlang.org/docs/reference/) rewritten from 
-natural language to code, and focused on Java-Kotlin differences. To use it, just read files from [here](src/tutorial) in the index order.  
+natural language to code, and focused on Java-Kotlin differences. Here is the contents:
+
+1. [Basic Sysntax](src/tutorial/01-basic-syntax.kt) ([docs](https://kotlinlang.org/docs/reference/basic-syntax.html))
+1. [Idioms](src/tutorial/02-idioms.kt) ([docs](https://kotlinlang.org/docs/reference/idioms.html))
+1. [Returns and Jumps](src/tutorial/03-return-and-jumps.kt) ([docs](https://kotlinlang.org/docs/reference/returns.html))
+1. [Classes and Inheritance](src/tutorial/04-classes.kt) ([docs](https://kotlinlang.org/docs/reference/classes.html))
+1. [Properties and Fields](src/tutorial/05-properties.kt) ([docs](https://kotlinlang.org/docs/reference/properties.html))
+1. [Interfaces](src/tutorial/06-interfaces.kt) ([docs](https://kotlinlang.org/docs/reference/interfaces.html))
+1. [Extensions](src/tutorial/07-extensions.kt) ([docs](https://kotlinlang.org/docs/reference/extensions.html))
+1. [Data Classes](src/tutorial/08-data-classes.kt) ([docs](https://kotlinlang.org/docs/reference/data-classes.html))
+1. [Sealed Classes](src/tutorial/09-sealed-classes.kt) ([docs](https://kotlinlang.org/docs/reference/sealed-classes.html))
+1. [Generics](src/tutorial/10-generics.kt) ([docs](https://kotlinlang.org/docs/reference/generics.html))
+1. [Nested Classes](src/tutorial/11-nested-classes.kt) ([docs](https://kotlinlang.org/docs/reference/nested-classes.html))
+1. [Enum Classes](src/tutorial/12-enums.kt) ([docs](https://kotlinlang.org/docs/reference/enum-classes.html))
+1. [Objects](src/tutorial/13-objects.kt) ([docs](https://kotlinlang.org/docs/reference/object-declarations.html))
+1. [Delegation](src/tutorial/14-delegation.kt) ([docs](https://kotlinlang.org/docs/reference/delegation.html))
+1. [Delegated Properties](src/tutorial/15-delegated-properties.kt) ([docs](https://kotlinlang.org/docs/reference/delegated-properties.html))
+1. [Functions](src/tutorial/16-functions.kt) ([docs](https://kotlinlang.org/docs/reference/functions.html))
+1. [Lambdas](src/tutorial/17-lambdas.kt) ([docs](https://kotlinlang.org/docs/reference/lambdas.html))
+1. [Inline Functions](src/tutorial/18-inline-functions.kt) ([docs](https://kotlinlang.org/docs/reference/inline-functions.html))
+1. [Destructuring](src/tutorial/19-destructuring.kt) ([docs](https://kotlinlang.org/docs/reference/multi-declarations.html))
+1. [Collections](src/tutorial/20-collections.kt) ([docs](https://kotlinlang.org/docs/reference/collections.html))
+1. [Ranges](src/tutorial/21-ranges.kt) ([docs](https://kotlinlang.org/docs/reference/ranges.html))
+1. [Type Checks and Casts](src/tutorial/22-type-checks.kt) ([docs](https://kotlinlang.org/docs/reference/typecasts.html))
+1. [Equality](src/tutorial/23-equality.kt) ([docs](https://kotlinlang.org/docs/reference/equality.html))
+1. [Operator Overloading](src/tutorial/24-operator-overloading.kt) ([docs](https://kotlinlang.org/docs/reference/operator-overloading.html))
+1. [Null Safety](src/tutorial/25-null-safety.kt) ([docs](https://kotlinlang.org/docs/reference/null-safety.html))
+1. [Exceptions](src/tutorial/26-exceptions.kt) ([docs](https://kotlinlang.org/docs/reference/exceptions.html))
+1. [Annotations](src/tutorial/27-annotations.kt) ([docs](https://kotlinlang.org/docs/reference/annotations.html))
+1. [Reflection](src/tutorial/28-reflection.kt) ([docs](https://kotlinlang.org/docs/reference/reflection.html))
+1. [Type-Safe Builders](src/tutorial/29-type-safe-builders.kt) ([docs](https://kotlinlang.org/docs/reference/type-safe-builders.html))
+1. [Type Aliases](src/tutorial/30-type-aliases.kt) ([docs](/home/lukasz/Projekty/github/kotlin-learn/src/tutorial/30-type-aliases.kt))  

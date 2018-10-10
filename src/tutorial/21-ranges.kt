@@ -1,11 +1,11 @@
 package tutorial
 
-@Suppress("VARIABLE_WITH_REDUNDANT_INITIALIZER")
-    /**
+/**
  * Ranges: https://kotlinlang.org/docs/reference/ranges.html
  *
  * @author Lukasz Frankowski
  */
+@Suppress("VARIABLE_WITH_REDUNDANT_INITIALIZER")
 fun main(args: Array<String>) {
 
     println("range basics")

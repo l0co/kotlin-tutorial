@@ -1,7 +1,7 @@
 package tutorial
 
 /**
- * Enum classes: https://kotlinlang.org/docs/reference/enum-classes.html
+ * Enum Classes: https://kotlinlang.org/docs/reference/enum-classes.html
  *
  * @author Lukasz Frankowski
  */

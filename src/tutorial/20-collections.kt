@@ -4,12 +4,12 @@ import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
+/**
+ * Collections: https://kotlinlang.org/docs/reference/collections.html
+ *
+ * @author Lukasz Frankowski
+ */
 @Suppress("ReplacePutWithAssignment", "UNUSED_VARIABLE", "UNUSED_VALUE", "UNUSED_DESTRUCTURED_PARAMETER_ENTRY")
-    /**
-     * Collections: https://kotlinlang.org/docs/reference/collections.html
-     *
-     * @author Lukasz Frankowski
-     */
 fun main(args: Array<String>) {
 
     println("array")

@@ -3,7 +3,7 @@ package tutorial
 import java.time.LocalDate
 
 /**
- * Properties and fields: https://kotlinlang.org/docs/reference/properties.html
+ * Properties and Fields: https://kotlinlang.org/docs/reference/properties.html
  *
  * @author Lukasz Frankowski
  */

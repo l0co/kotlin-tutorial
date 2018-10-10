@@ -1,11 +1,11 @@
 package tutorial
 
-@Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE", "CanBeVal", "UNUSED_VARIABLE")
 /**
  * Generics: https://kotlinlang.org/docs/reference/generics.html
  *
  * @author Lukasz Frankowski
  */
+@Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE", "CanBeVal", "UNUSED_VARIABLE")
 fun main(args: Array<String>) {
 
     println("generic basics")

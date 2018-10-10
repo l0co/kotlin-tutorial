@@ -1,11 +1,11 @@
 package tutorial
 
-@Suppress("MoveLambdaOutsideParentheses")
-        /**
+/**
  * Lambdas: https://kotlinlang.org/docs/reference/lambdas.html
  *
  * @author Lukasz Frankowski
  */
+@Suppress("MoveLambdaOutsideParentheses")
 fun main(args: Array<String>) {
 
     println("\nfunction types")

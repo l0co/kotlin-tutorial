@@ -1,11 +1,11 @@
 package tutorial
 
-@Suppress("UNUSED_VARIABLE", "SENSELESS_COMPARISON", "UNREACHABLE_CODE", "ReplaceSingleLineLet", "CanBeVal", "CAST_NEVER_SUCCEEDS")
 /**
  * Null Safety: https://kotlinlang.org/docs/reference/null-safety.html
  *
  * @author Lukasz Frankowski
  */
+@Suppress("UNUSED_VARIABLE", "SENSELESS_COMPARISON", "UNREACHABLE_CODE", "ReplaceSingleLineLet", "CanBeVal", "CAST_NEVER_SUCCEEDS")
 fun main(args: Array<String>) {
 
     println("null safety basics")

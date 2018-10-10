@@ -1,11 +1,11 @@
 package tutorial
 
-@Suppress("ReplaceCallWithBinaryOperator")
 /**
  * Equality: https://kotlinlang.org/docs/reference/equality.html
  *
  * @author Lukasz Frankowski
  */
+@Suppress("ReplaceCallWithBinaryOperator")
 fun main(args: Array<String>) {
 
     println("equality check")

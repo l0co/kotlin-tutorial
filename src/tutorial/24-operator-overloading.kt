@@ -1,11 +1,11 @@
 package tutorial
 
-@Suppress("EqualsOrHashCode")
-    /**
- * Operator overloading: https://kotlinlang.org/docs/reference/operator-overloading.html
+/**
+ * Operator Overloading: https://kotlinlang.org/docs/reference/operator-overloading.html
  *
  * @author Lukasz Frankowski
  */
+@Suppress("EqualsOrHashCode")
 fun main(args: Array<String>) {
 
     class Point(var x: Int, var y: Int): Comparable<Point> {

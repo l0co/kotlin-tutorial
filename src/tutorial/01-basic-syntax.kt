@@ -1,7 +1,7 @@
 package tutorial
 
 /**
- * Basic syntax: https://kotlinlang.org/docs/reference/basic-syntax.html
+ * Basic Syntax: https://kotlinlang.org/docs/reference/basic-syntax.html
  * 
  * @author Lukasz Frankowski
  */

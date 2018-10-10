@@ -1,7 +1,7 @@
 package tutorial
 
 /**
- * Type-Safe builders: https://kotlinlang.org/docs/reference/type-safe-builders.html
+ * Type-Safe Builders: https://kotlinlang.org/docs/reference/type-safe-builders.html
  *
  * @author Lukasz Frankowski
  */

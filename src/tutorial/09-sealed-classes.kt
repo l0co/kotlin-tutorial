@@ -1,7 +1,7 @@
 package tutorial
 
 /**
- * Sealed classes: https://kotlinlang.org/docs/reference/sealed-classes.html
+ * Sealed Classes: https://kotlinlang.org/docs/reference/sealed-classes.html
  *
  * @author Lukasz Frankowski
  */

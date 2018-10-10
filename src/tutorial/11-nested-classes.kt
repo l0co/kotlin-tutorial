@@ -1,7 +1,7 @@
 package tutorial
 
 /**
- * Nested classes: https://kotlinlang.org/docs/reference/nested-classes.html
+ * Nested Classes: https://kotlinlang.org/docs/reference/nested-classes.html
  *
  * @author Lukasz Frankowski
  */
