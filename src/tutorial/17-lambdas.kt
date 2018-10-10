@@ -56,7 +56,7 @@ fun main(args: Array<String>) {
 
         fun a(init: A.() -> Unit): A { // A.()->Unit is NOT an extension, it's a function ()->Unit which gets A instance as "this"
             val a = A()
-            a.init()
+            a.init() // "init" function from method arguments is executed against "a" object
             return a
         }
 
