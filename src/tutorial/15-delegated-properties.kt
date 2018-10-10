@@ -16,12 +16,12 @@ fun main(args: Array<String>) {
         class Delegate<T>(var x: T) {
         
             operator fun getValue(thisRef: Any?, property: KProperty<*>): T { // accessing value method pattern
-                println("getting value by delegate (${thisRef}, ${property.name})")
+                println("getting value by delegate ($thisRef, ${property.name})")
                 return x
             }
 
             operator fun setValue(thisRef: Any?, property: KProperty<*>, value: T) { // setting value method pattern
-                println("setting value by delegate (${thisRef}, ${property.name})")
+                println("setting value by delegate ($thisRef, ${property.name})")
                 x = value
             }
         }
