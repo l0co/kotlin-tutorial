@@ -3,7 +3,7 @@
 Essentially, this is a tutorial for Kotlin programming language from [here](https://kotlinlang.org/docs/reference/) rewritten from 
 natural language to code, and focused on Java-Kotlin differences. Here is the contents:
 
-1. [Basic Sysntax](src/tutorial/01-basic-syntax.kt) ([docs](https://kotlinlang.org/docs/reference/basic-syntax.html))
+1. [Basic Syntax](src/tutorial/01-basic-syntax.kt) ([docs](https://kotlinlang.org/docs/reference/basic-syntax.html))
 1. [Idioms](src/tutorial/02-idioms.kt) ([docs](https://kotlinlang.org/docs/reference/idioms.html))
 1. [Returns and Jumps](src/tutorial/03-return-and-jumps.kt) ([docs](https://kotlinlang.org/docs/reference/returns.html))
 1. [Classes and Inheritance](src/tutorial/04-classes.kt) ([docs](https://kotlinlang.org/docs/reference/classes.html))
