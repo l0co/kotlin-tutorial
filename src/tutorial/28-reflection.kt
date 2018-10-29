@@ -1,7 +1,7 @@
 package tutorial
 
 /**
- * Reflection: https://kotlinlang.org/docs/reference/reflection.html
+ * Reflection: https://kotlinlang.org/docs/reference/annotations.html
  *
  * @author Lukasz Frankowski
  */
