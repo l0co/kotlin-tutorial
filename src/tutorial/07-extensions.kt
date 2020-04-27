@@ -120,7 +120,7 @@ fun main(args: Array<String>) {
         
     }
 
-    println("\nclass memember extensions")
+    println("\nclass member extensions")
     run {
         class Person(val name: String)
 
